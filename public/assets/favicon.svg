@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Citation Reading Room">
+  <rect width="64" height="64" rx="10" fill="#231b18"/>
+  <path d="M17 14h29v36H17z" fill="#d8c7a8"/>
+  <path d="M23 23h17M23 31h17M23 39h11" stroke="#4a382d" stroke-width="3" stroke-linecap="round"/>
+  <path d="M42 16v12l-5-3-5 3V16" fill="#b78b4b"/>
+</svg>
