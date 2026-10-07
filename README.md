@@ -24,10 +24,14 @@ Open `http://localhost:8000/`. There is no JavaScript and no build step.
 
 Edit the HTML and Markdown directly. The Morrow Coworking passages and reserved `.example` URLs are fictional and should remain clearly labelled if replaced.
 
-## Pending launch metadata
+## Production configuration
 
-The production origin is not known yet. Canonical URLs, `og:url`, an absolute sitemap and host-specific configuration are intentionally omitted until launch.
+Production base URL: `https://citation-reading-room.onrender.com/`.
+
+Render Static Site `srv-db3a62l9fdbs73afpejg` serves `public/` from the `main` branch of `bdod-prod/citation-reading-room`. Its command is `test -f public/sitemap.xml`, a publication check that does not build or transform the site. The public-repository connection uses manual deployment from the Render dashboard; it does not grant Render access to other repositories.
+
+Canonical and Open Graph URLs use this origin; the sitemap lists the guide and printable worksheet. Root-aware links keep the fallback page styled when it is served at a nested missing path. No SPA rewrite is configured.
 
 ## Rendered review — 7 October 2026
 
-The guide and worksheet were reviewed in Chromium at desktop width, 390 px and 320 px. Links, download files, metadata, keyboard focus and absence of external runtime requests passed. Print spacing and record breaks were corrected: the worksheet now occupies two A4 pages rather than five, with no blank continuation page. Printed labels and writing rules were refined; screen styling and outbound links are unchanged. See the root `BUILD-REPORT.md` for evidence and launch status. Hosting remains pending the user's choice.
+The guide and worksheet were reviewed in Chromium at desktop width, 390 px and 320 px. Links, download files, metadata, keyboard focus and absence of external runtime requests passed. Print spacing and record breaks were corrected: the worksheet now occupies two A4 pages rather than five, with no blank continuation page. Printed labels and writing rules were refined; screen styling and outbound links are unchanged. See the root `BUILD-REPORT.md` for evidence and launch status. The user selected Render Static Sites in the existing Google-linked workspace.
